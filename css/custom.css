@@ -45,6 +45,10 @@ li.dropdown:hover > .dropdown-menu li > a:focus{
     background-color: transparent;
     font-weight: 700;
 }
+.carousel-inner{
+  height:45%;
+  width:100%;
+}
 .carousel-indicators li{
     background-color:#f27752;
     border-color:#f27752;
@@ -65,10 +69,10 @@ img {
 }
 
 .outer{
-  margin-top:10%;
-  margin-left:20%;
-  height:35%;
-  width: 60%;
+  margin-top:5%;
+  margin-left:15%;
+  height:40%;
+  width: 70%;
   display: block;
 }
 
@@ -78,11 +82,16 @@ img {
   position: relative;
 }
 
-.centerdiv > div >a{
-  color:#d53e10;
+.centerdiv > div > b{
+  color:#ffffff;
   left: 41%;
   position: absolute;
   bottom: 2%;
   font-family: 'Raleway',sans-serif;
   font-weight: 700;
+}
+
+.centerdiv>div:hover{
+  border-radius:50%;
+  border:#d53e10 thick dotted;
 }
