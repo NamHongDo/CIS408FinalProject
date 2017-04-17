@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="drop.js"></script>
   </head>
 
   <body>
@@ -23,25 +24,107 @@
 
       <div class="outer">
         <div class="centerdiv">
-        <div class="brightness">
-          <a href=""f="#"><img src="image/coffee.jpg" class="img-responsive img-circle " alt="Cinque Terre" style="width:200px;height:200px;"> </a>
+        <div>
+          <a href="#A" data-target="A"><img src="image/coffee.jpg" class="img-responsive img-circle " alt="Cinque Terre" style="width:200px;height:200px;"> </a>
           <b>Coffee </b>
         </div>
         <div>
-          <a href="#"><img src="image/smoothie.jpg" class="img-responsive img-circle" alt="Cinque Terre"style="width:200px;height:200px;"></a>
+          <a href="#B" data-target="B"><img src="image/smoothie.jpg" class="img-responsive img-circle" alt="Cinque Terre"style="width:200px;height:200px;"></a>
           <b>Smoothie </b>
         </div>
         <div>
-          <a href="#"><img src="image/tea.jpg"  class="img-responsive img-circle" alt="Cinque Terre" style="width:200px;height:200px;"></a>
+          <a href="#C" data-target="C"><img src="image/tea.jpg"  class="img-responsive img-circle" alt="Cinque Terre" style="width:200px;height:200px;"></a>
           <b>Tea </b>
         </div>
         <div>
-          <a href="#"><img src="image/donut.jpg" class="img-responsive img-circle" alt="Cinque Terre"style="width:200px;height:200px;"></a>
+          <a href="#D" data-target="D"><img src="image/donut.jpg" class="img-responsive img-circle" alt="Cinque Terre"style="width:200px;height:200px;"></a>
           <b>Donut </b>
         </div>
       </div>
     </div>
 
+    <div class="coffee" id="A">
+      <div class="coffeemenu">
+        <ul>
+          <li><a>Fresh Brew Coffee</a></li>
+          <li><a>Cafe Americano</a></li>
+          <li><a>Cappuccino</a></li>
+          <li><a>Cafe Late</a></li>
+          <li><a>Caffe Mocha</a></li>
+          <li><a>White Chocolate Mocha</a></li>
+          <li><a>Expresso</a></li>
+          <li><a>Iced Cafe</a></li>
+        <ul>
+      </div>
+      <div class="cofeepic">
+
+      </div>
+    </div>
+
+    <div class="smoothie" id="B">
+      <div class="smoothiemenu">
+        <ul>
+          <li><a>Your Favorite Smoothie with Mix and Match:</a></li>
+          <li><a>Strawberry</a></li>
+          <li><a>Blueberry</a></li>
+          <li><a>Mango</a></li>
+          <li><a>Banana</a></li>
+          <li><a>Pineapple</a></li>
+          <li><a>Kiwi</a></li>
+        <ul>
+      </div>
+      <div class=smothiepic>
+      </div>
+    </div>
+
+    <div class="tea" id="C">
+      <div class="teamenu">
+        <ul>
+          <li><a>Available in Green and Black with Flavors:</a></li>
+          <li><a>Peach</a></li>
+          <li><a>Raspberry</a></li>
+          <li><a>Blackberry</a></li>
+        <ul>
+      </div>
+      <div class="teapic">
+      </div>
+    </div>
+
+    <div class="donut"id="D">
+      <div class="donutmenu" >
+      </div>
+      <div class="donutpic">
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
   </body>
 </html>

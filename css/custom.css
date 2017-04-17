@@ -95,3 +95,99 @@ img {
   border-radius:50%;
   border:#d53e10 thick dotted;
 }
+
+.coffee{
+  border: 1px solid green ;
+  width: 100%;
+  height:800px;
+}
+
+.coffeemenu{
+  border: 1px solid white ;
+  width: 40%;
+  height:100%;
+  float:left;
+}
+
+.coffeemenu ul{
+  font-family: Papyrus, fantasy;
+  list-style-type: none;
+  padding-top: 10px;
+  margin-top: -1px;
+  margin-left:3%;
+
+  font-size: 300%;
+  padding-top: 100px;
+}
+
+.coffeemenu a{
+  color:#f27752;;
+}
+
+.coffeemenu a:hover{
+  color:#833558;
+  text-decoration:none;
+}
+
+.cofeepic{
+  border: 1px #d53e10 ;
+  width: 60%;
+  height:100%;
+  float:right;
+}
+
+.smoothie{
+  border: 1px solid green ;
+  width: 100%;
+  height:800px;
+}
+
+.smoothiemenu{
+  border: 1px solid white ;
+  width: 50%;
+  height:100%;
+  float:right;
+}
+
+.smoothiemenu ul{
+  font-family: Papyrus, fantasy;
+  list-style-type: none;
+  padding-top: 10px;
+  margin-top: -1px;
+  margin-left:3%;
+  font-size: 300%;
+  padding-top: 100px;
+}
+
+.tea{
+  border: 1px solid green ;
+  width: 100%;
+  height:400px;
+}
+
+.teamenu{
+  border: 1px solid white ;
+  width: 45%;
+  height:100%;
+  float:left;
+}
+
+.teamenu ul{
+  font-family: Papyrus, fantasy;
+  list-style-type: none;
+  padding-top: 10px;
+  margin-top: -1px;
+  margin-left:3%;
+  font-size: 300%;
+  padding-top: 100px;
+}
+
+.donut{
+  border: 1px solid green ;
+  width: 100%;
+  height:800px;
+}
+
+.hide-image {
+   display: none;
+ }
