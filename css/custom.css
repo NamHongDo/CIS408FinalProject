@@ -91,19 +91,18 @@ img {
   font-weight: 700;
 }
 
-.centerdiv>div:hover{
-  border-radius:50%;
-  border:#d53e10 thick dotted;
+.centerdiv>div>a :hover{
+  -webkit-box-shadow: 0px 0px 30px 0px #f27752;
 }
 
 .coffee{
-  border: 1px solid green ;
+//border: 1px solid green ;
   width: 100%;
-  height:800px;
+  height:700px;
 }
 
 .coffeemenu{
-  border: 1px solid white ;
+//border: 1px solid white ;
   width: 40%;
   height:100%;
   float:left;
@@ -120,31 +119,39 @@ img {
   padding-top: 100px;
 }
 
-.coffeemenu a{
-  color:#f27752;;
+#coffeeHeader li{
+    color:#f27752;
 }
 
-.coffeemenu a:hover{
-  color:#833558;
-  text-decoration:none;
+#coffeeMenuItems li{
+    color:#e36076;
+    padding-top:5px;
+    padding-left: 15px;
 }
 
 .cofeepic{
-  border: 1px #d53e10 ;
   width: 60%;
   height:100%;
+  //border: 20px solid white ;
   float:right;
 }
 
+#coffee1{
+  float:right;
+  max-width: 100%;
+  max-height: 100%;
+  padding-top:15%;
+}
+
 .smoothie{
-  border: 1px solid green ;
+  //border: 1px solid green ;
   width: 100%;
-  height:800px;
+  height:700px;
 }
 
 .smoothiemenu{
-  border: 1px solid white ;
-  width: 50%;
+  //border: 1px solid white ;
+  width: 40%;
   height:100%;
   float:right;
 }
@@ -159,19 +166,55 @@ img {
   padding-top: 100px;
 }
 
+
+#smoothieHeader li{
+    color:#f27752;
+}
+
+#smoothieMenuItems li{
+    color:#e36076;
+    padding-top:5px;
+    padding-left: 15px;
+}
+
+.smoothiePic{
+  width: 60%;
+  height:100%;
+  //border: 20px solid white ;
+  float:left;
+}
+
+#smoothie1{
+  float:left;
+  max-width: 100%;
+  max-height: 100%;
+  padding :10%;
+}
 .tea{
-  border: 1px solid green ;
+  //border: 1px solid green ;
   width: 100%;
-  height:400px;
+  height:500px;
 }
 
 .teamenu{
-  border: 1px solid white ;
+  //border: 3px solid white ;
   width: 45%;
   height:100%;
   float:left;
 }
+.teapic{
+  width: 55%;
+  height:100%;
+  //border: 20px solid white ;
+  float:right;
+}
 
+#tea1{
+  float:right;
+  max-width: 100%;
+  max-height: 100%;
+  padding :10%;
+}
 .teamenu ul{
   font-family: Papyrus, fantasy;
   list-style-type: none;
@@ -182,8 +225,19 @@ img {
   padding-top: 100px;
 }
 
+#teaHeader li{
+    color:#f27752;
+}
+
+#teaMenuItems li{
+    color:#e36076;
+    padding-top:5px;
+    padding-left: 15px;
+}
+
+
 .donut{
-  border: 1px solid green ;
+  //border: 1px solid green ;
   width: 100%;
   height:800px;
 }
