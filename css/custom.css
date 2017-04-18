@@ -16,6 +16,14 @@ div#myNavbar.container-fluid{
   padding-top: 0px;
 }
 
+.socialList li {
+    float: left;
+}
+.socialList li a {
+  padding-right:10px;
+  display:block;
+  float: none;
+}
 ul.nav.navbar-nav{
     display: inline-block;
     float: none;
@@ -71,7 +79,7 @@ li.dropdown:hover > .dropdown-menu li > a:focus{
                     */
 .home-master{
   //border:3px solid white;
-  height: 1600px;
+  height: 700px;
   width: 1000px;
   display:block;
   margin:10% auto;
