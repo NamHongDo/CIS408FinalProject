@@ -9,41 +9,34 @@
   </head>
 
   <body>
-
-      <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-          <ul class="nav navbar-nav">
-            <li><a href="home.html">HOME</a></li>
-            <li class="active"><a href="menu.html">MENU</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <div id=logo>
-        <img src="image/CopperMoon.png" style="width:200px;height:200px;">
+    <nav id='nav_bar' class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div  class="container-fluid" id="myNavbar">
+        <ul  class="nav navbar-nav">
+          <li><a href="home.html">HOME</a></li>
+          <li  class="active"><a href="menu.html">MENU</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li id='selected'><a><img src="image/CopperMoon.png" style="width:100px;height:100px;"></a>  <li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
       </div>
+    </nav>
 
+    <div class="menuMaster">
       <div class="outer">
         <div class="centerdiv">
-        <div>
-          <a id ="pic1" href="#A" data-target="A"><img src="image/coffee.jpg" class="img-responsive img-circle " alt="Cinque Terre" style="width:200px;height:200px;"> </a>
-          <b>Coffee </b>
-        </div>
-        <div>
-          <a id ="pic2" href="#B" data-target="B"><img src="image/smoothie.jpg" class="img-responsive img-circle" alt="Cinque Terre"style="width:200px;height:200px;"></a>
-          <b>Smoothie </b>
-        </div>
-        <div>
-          <a id ="pic3" href="#C" data-target="C"><img src="image/tea.jpg"  class="img-responsive img-circle" alt="Cinque Terre" style="width:200px;height:200px;"></a>
-          <b>Tea </b>
-        </div>
-        <div>
-          <a id ="pic4" href="#D" data-target="D"><img src="image/donut.jpg" class="img-responsive img-circle" alt="Cinque Terre"style="width:200px;height:200px;"></a>
-          <b>Donut </b>
-        </div>
+          <div>
+            <a id ="pic1" href="#A" data-target="A"><img src="image/coffee.jpg" class="img-responsive img-circle " alt="Cinque Terre" style="width:100px;height:100px;"> </a>
+          </div>
+          <div>
+            <a id ="pic2" href="#B" data-target="B"><img src="image/smoothie.jpg" class="img-responsive img-circle" alt="Cinque Terre"style="width:100px;height:100px;"></a>
+          </div>
+          <div>
+            <a id ="pic3" href="#C" data-target="C"><img src="image/tea.jpg"  class="img-responsive img-circle" alt="Cinque Terre" style="width:100px;height:100px;"></a>
+          </div>
+          <div>
+            <a id ="pic4" href="#D" data-target="D"><img src="image/donut.jpg" class="img-responsive img-circle" alt="Cinque Terre"style="width:100px;height:100px;"></a>
+          </div>
       </div>
     </div>
 
@@ -127,7 +120,7 @@
         <img id=donut1 src="image/donut1.jpg" >
       </div>
     </div>
-
+ </div>
     <script>
       $(document).ready(function(){
         // Add smooth scrolling to all links
