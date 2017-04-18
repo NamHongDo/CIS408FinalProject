@@ -3,8 +3,11 @@ body{
 }
 .navbar-default{
   background-color: #212121;
-  border-color:#222222;
+  border-color:#212121;
+  //border-color:#ffffff;
   margin-bottom:0;
+  width:520px;
+  margin:0 auto;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -12,7 +15,8 @@ body{
   color: #ffffff;
   background-color: #f27752;
   font-size: 90%;
-  font-family: 'Raleway',sans-serif;
+  //font-family: 'Raleway',sans-serif;
+  font-family: Papyrus, fantasy;
   padding: 15px;
   font-weight: 700;
 }
@@ -23,13 +27,12 @@ body{
 .navbar-default .navbar-nav > li > a {
   color:  #ffffff;
   font-size: 90%;
-  font-family: 'Raleway',sans-serif;
+  //font-family: 'Raleway',sans-serif;
+  font-family: Papyrus, fantasy;
   padding: 15px;
   font-weight: 700;
 }
-.navbar-default ul{
-    margin-left: 40%;
-}
+
 li.dropdown:hover > .dropdown-menu {
     display: block;
     background-color:#222222;
@@ -45,10 +48,7 @@ li.dropdown:hover > .dropdown-menu li > a:focus{
     background-color: transparent;
     font-weight: 700;
 }
-.carousel-inner{
-  height:45%;
-  width:100%;
-}
+
 .carousel-indicators li{
     background-color:#f27752;
     border-color:#f27752;
@@ -61,25 +61,40 @@ li.dropdown:hover > .dropdown-menu li > a:focus{
   width:17px;
   height:17px;
 }
-#logo{
-    margin-left: 43%;
-}
-img {
-    width: 100%;
+#logo img{
+  display:block;
+  margin:0 auto;
+  max-width: 100%;
 }
 
+.carousel-inner img{
+  display:block;
+  margin:0 auto;
+  max-width: 100%;
+
+}
+
+/*
+------> *** <------
+    MENU segment
+------> *** <------
+                    */
 .outer{
+  //border: 4px solid white ;
+  padding: 10px;
   margin-top:5%;
-  margin-left:15%;
+  display:block;
+  margin:5% auto 10%;
   height:40%;
-  width: 70%;
+  width: 58%;
   display: block;
 }
 
 .centerdiv > div{
   display: inline-block;
-  padding: 30px;
+  padding: 2%;
   position: relative;
+  margin:0 auto;
 }
 
 .centerdiv > div > b{
@@ -91,18 +106,31 @@ img {
   font-weight: 700;
 }
 
-.centerdiv>div>a :hover{
-  -webkit-box-shadow: 0px 0px 30px 0px #f27752;
+#pic1 :hover{
+    -webkit-box-shadow: 0px 0px 100px 0px #e7d2d8;
+}
+
+#pic2 :hover{
+    -webkit-box-shadow: 0px 0px 100px 0px #bc462a;
+}
+
+#pic3 :hover{
+    -webkit-box-shadow: 0px 0px 100px 0px #774162;
+}
+
+#pic4 :hover{
+    -webkit-box-shadow: 0px 0px 100px 0px #e4d58a;
 }
 
 .coffee{
-//border: 1px solid green ;
-  width: 100%;
-  height:700px;
+  //border: 2px solid green ;
+  height:900px;
+  margin:0 auto;
+  max-width: 65%;
 }
 
 .coffeemenu{
-//border: 1px solid white ;
+  //border: 10px solid red;
   width: 40%;
   height:100%;
   float:left;
@@ -112,11 +140,9 @@ img {
   font-family: Papyrus, fantasy;
   list-style-type: none;
   padding-top: 10px;
-  margin-top: -1px;
   margin-left:3%;
-
   font-size: 300%;
-  padding-top: 100px;
+  padding-top: 10px;
 }
 
 #coffeeHeader li{
@@ -124,33 +150,37 @@ img {
 }
 
 #coffeeMenuItems li{
-    color:#e36076;
-    padding-top:5px;
+    color:#ffffff;
+    padding-top:30px;
     padding-left: 15px;
 }
 
 .cofeepic{
   width: 60%;
   height:100%;
-  //border: 20px solid white ;
+  //border: 10px solid white ;
+  padding-top:10%;
   float:right;
+  margin:0 auto;
 }
 
 #coffee1{
-  float:right;
+  float:left;
   max-width: 100%;
   max-height: 100%;
-  padding-top:15%;
+  padding :10%;
 }
 
 .smoothie{
-  //border: 1px solid green ;
+//border: 10px solid green ;
   width: 100%;
-  height:700px;
+  height:800px;
+  max-width: 65%;
+  margin:auto;
 }
 
 .smoothiemenu{
-  //border: 1px solid white ;
+  //border: 10px solid red ;
   width: 40%;
   height:100%;
   float:right;
@@ -160,10 +190,8 @@ img {
   font-family: Papyrus, fantasy;
   list-style-type: none;
   padding-top: 10px;
-  margin-top: -1px;
   margin-left:3%;
   font-size: 300%;
-  padding-top: 100px;
 }
 
 
@@ -172,8 +200,8 @@ img {
 }
 
 #smoothieMenuItems li{
-    color:#e36076;
-    padding-top:5px;
+    color:#ffffff;
+    padding-top:30px;
     padding-left: 15px;
 }
 
@@ -185,15 +213,16 @@ img {
 }
 
 #smoothie1{
-  float:left;
   max-width: 100%;
   max-height: 100%;
   padding :10%;
 }
+
 .tea{
-  //border: 1px solid green ;
-  width: 100%;
-  height:500px;
+  //border: 2px solid green ;
+  height:430px;
+  margin: auto;
+  max-width: 65%;
 }
 
 .teamenu{
@@ -210,7 +239,6 @@ img {
 }
 
 #tea1{
-  float:right;
   max-width: 100%;
   max-height: 100%;
   padding :10%;
@@ -222,7 +250,7 @@ img {
   margin-top: -1px;
   margin-left:3%;
   font-size: 300%;
-  padding-top: 100px;
+  padding-top: 10px;
 }
 
 #teaHeader li{
@@ -230,18 +258,262 @@ img {
 }
 
 #teaMenuItems li{
-    color:#e36076;
+    color:#ffffff;
     padding-top:5px;
     padding-left: 15px;
+    padding-top:30px;
 }
 
 
 .donut{
-  //border: 1px solid green ;
+  //border: 10px solid green ;
   width: 100%;
   height:800px;
+  max-width: 65%;
+  margin: auto;
 }
 
-.hide-image {
-   display: none;
- }
+.donutmenu{
+  //border: 10px solid red ;
+  width: 40%;
+  height:100%;
+  float:right;
+}
+
+.donutmenu ul{
+  font-family: Papyrus, fantasy;
+  list-style-type: none;
+  padding-top: 10px;
+  margin-left:3%;
+  font-size: 300%;
+}
+
+#donutHeader li{
+    color:#f27752;
+}
+
+#donutMenuItems li{
+    color:#ffffff;
+    padding-top:30px;
+    padding-left: 15px;
+}
+
+.donutpic{
+  width: 60%;
+  height:100%;
+  //border: 20px solid white ;
+  float:left;
+}
+
+#donut1{
+  max-width: 100%;
+  max-height: 100%;
+  padding :10%;
+}
+
+/*
+------> *** <------
+    ABOUT segment
+------> *** <------
+                    */
+.aboutMaster{
+  //border:3px solid white;
+  height: 1600px;
+  width: 1000px;
+  display:block;
+  margin:0 auto;
+}
+
+.historyHeader{
+  font-family: Papyrus, fantasy;
+  color:#f27752;
+  font-size: 400%;
+  padding-top:100px;
+}
+
+.historyList{
+  font-family: Papyrus, fantasy;
+  color:#ffffff;
+  font-size: 200%;
+  padding-top:10px;
+  padding-left:20px;
+}
+
+.offerHeader{
+  font-family: Papyrus, fantasy;
+  color:#f27752;
+  font-size: 400%;
+  padding-top: 50px;
+}
+
+.offerList{
+  font-family: Papyrus, fantasy;
+  color:#ffffff;
+  font-size: 200%;
+  padding-top:10px;
+  padding-left:20px;
+}
+
+.achieveHeader{
+  font-family: Papyrus, fantasy;
+  color:#f27752;
+  font-size: 400%;
+  padding-top: 50px;
+}
+
+.achieveList{
+  font-family: Papyrus, fantasy;
+  color:#ffffff;
+  font-size: 200%;
+  padding-top:10px;
+  padding-left:20px;
+}
+/*
+------> *** <------
+    GALERY segment
+------> *** <------
+                    */
+.galeryMaster{
+  //border:3px solid white;
+  height: 1500px;
+  width: 1000px;
+  margin:0 auto;
+}
+.gal1{
+  //border:3px solid white;
+  height: auto;
+  width: 60%;
+  float:left;
+}
+.gal2{
+  //border:3px solid red;
+  height: 300px;
+  width: 40%;
+  float:left;
+
+}
+.gal3{
+  //border:3px solid green;
+  height: auto;
+  width: 40%;
+  float:right;
+}
+.gal4{
+  //border:3px solid orange;
+  height: auto;
+  width: 30%;
+  float:left;
+}
+.gal5{
+  //border:3px solid blue;
+  height: auto;
+  width: 30%;
+  float:left;
+}
+.gal6{
+  //border:3px solid white;
+  height: auto;
+    width: 40%;
+  float:right;
+}
+
+.gal7{
+  //border:3px solid white;
+  height: auto;
+  width: 60%;
+  float:right;
+}
+
+
+/*
+------> *** <------
+    CONTACT segment
+------> *** <------
+                    */
+.contactMaster{
+  //border:3px solid white;
+  height: 800px;
+  width: 1100px;
+  display:block;
+  margin:0 auto;
+}
+
+.copperMap{
+  //border:3px solid white;
+  height: auto;
+  width: auto;
+  float: left;
+  padding-top: 25px;
+  display: inline-block;
+
+}
+
+.mapText{
+  font-family: Papyrus, fantasy;
+  color:#f27752;
+  font-size: 200%;
+  padding-bottom:20px;
+  padding-left:50px;
+}
+
+.address{
+  //border:3px solid red;
+  height: 300px;
+  width: 400px;
+  float: right;
+  padding-top: 125px;
+}
+
+.addressHeader{
+    //border:3px solid white;
+    height: auto;
+    width: 100%;
+    font-family: Papyrus, fantasy;
+    color:#f27752;
+    float: left;
+}
+
+.addressInfo{
+//border:3px solid green;
+  height: auto;
+  width: 100%;
+  font-family: Papyrus, fantasy;
+  color:#ffffff;
+  float: left;
+  padding-top:20px;
+}
+
+.hours{
+  //border:3px solid green;
+  height: 200px;
+  width: 400px;
+  float: right;
+}
+.hoursHeader{
+//border:3px solid white;
+  height: auto;
+  width: 100%;
+  font-family: Papyrus, fantasy;
+  color:#f27752;
+  float: left;
+}
+
+.hoursFirst{
+  //border:3px solid green;
+  height: auto;
+  width: 30%;
+  font-family: Papyrus, fantasy;
+  color:#ffffff;
+  float: left;
+  padding-top:20px;
+}
+
+.hourSecond{
+  //border:3px solid green;
+  height: auto;
+  width: 70%;
+  font-family: Papyrus, fantasy;
+  color:#ffffff;
+  float: right;
+  padding-top:20px;
+}
