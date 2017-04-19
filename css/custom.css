@@ -35,6 +35,7 @@ ul.nav.navbar-nav> li{
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
+  -webkit-box-shadow: 0px 0px 30px 0px #bc462a;
   color: #ffffff;
   background-color: #f27752;
   font-size: 90%;
@@ -42,9 +43,11 @@ ul.nav.navbar-nav> li{
   font-family: Papyrus, fantasy;
   padding: 15px;
   font-weight: 700;
+
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
+  text-shadow: 0px 0px 30px  #bc462a;
   color:#f27752;
 }
 .navbar-default .navbar-nav > li > a {
@@ -72,6 +75,100 @@ li.dropdown:hover > .dropdown-menu li > a:focus{
     font-weight: 700;
 }
 
+.footerMenu{
+  background-image: url("../image/footerImg.jpg");
+  width:100%;
+  height:300px;
+  //border:3px solid white;
+  text-align: center;
+}
+
+.contactUs, .followUs{
+  width:300px;
+  height:220px;
+  display: inline-block;
+  margin: 40px 10px;
+  //border:3px solid red;
+  text-align: left;
+}
+
+
+.followUsHeader{
+  //border:3px solid white;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Papyrus, fantasy;
+  color:#f27752;
+  font-size: 150%;
+}
+
+.followUsText{
+  //border:3px solid green;
+  text-align: center;
+  vertical-align: middle;
+  margin-top:10px;
+  font-family: Papyrus, fantasy;
+  color:#ffffff;
+  font-size: 120%;
+}
+.temp {
+  //border:3px solid white;
+  width: 250px;
+  height:60px;
+  margin:0 auto;
+}
+ul.socialList {
+  padding-top:10px;
+  list-style-type: none;
+}
+
+.btn-twitter{
+  border-color:#f27752;
+}
+.fa {
+    background-color: #f27752;
+    color:#ffffff;
+    border:#f27752;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+  -webkit-box-shadow: 0px 0px 20px 0px #bc462a;
+  background-color:#ffffff;
+  color: #f27752;
+}
+
+.socialList>li> a{
+    border-color:#f27752;
+    margin-right: 5px;
+}
+
+.socialList>li> a:hover {
+    -webkit-box-shadow: 0px 0px 20px 0px #bc462a;
+    border-color:#ffffff;
+}
+
+
+.contactUsHeader{
+  //border:3px solid white;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Papyrus, fantasy;
+  color:#f27752;
+  font-size: 150%;
+}
+.contactUsText{
+  //border:3px solid green;
+  text-align: center;
+  vertical-align: middle;
+  margin-top:10px;
+  font-family: Papyrus, fantasy;
+  color:#ffffff;
+  font-size: 120%;
+}
 /*
 ------> *** <------
     HOME segment
@@ -79,10 +176,10 @@ li.dropdown:hover > .dropdown-menu li > a:focus{
                     */
 .home-master{
   //border:3px solid white;
-  height: 700px;
+  height: 570px;
   width: 1000px;
   display:block;
-  margin:10% auto;
+  margin:200px auto 70px;
 }
 
 .carousel-indicators li{
@@ -113,10 +210,10 @@ li.dropdown:hover > .dropdown-menu li > a:focus{
                     */
 .menuMaster{
   //border:3px solid white;
-  height: 3500px;
+  height: 3000px;
   width: 1000px;
   display:block;
-  margin:15% auto;
+  margin:200px auto 70px;
 }
 
 .outer{
@@ -305,7 +402,7 @@ li.dropdown:hover > .dropdown-menu li > a:focus{
 .donut{
   //border: 10px solid green ;
   width: 100%;
-  height:800px;
+  height:600px;
   max-width: 100%;
   margin: auto;
 }
@@ -355,10 +452,10 @@ li.dropdown:hover > .dropdown-menu li > a:focus{
                     */
 .aboutMaster{
   //border:3px solid white;
-  height: 1600px;
+  height: 1200px;
   width: 1000px;
   display:block;
-  margin:10% auto;
+  margin:150px auto 70px;
 }
 
 .historyHeader{
@@ -412,10 +509,10 @@ li.dropdown:hover > .dropdown-menu li > a:focus{
                     */
 .galeryMaster{
     //border:3px solid white;
-    height: 1600px;
+    height: 900px;
     width: 1000px;
     display:block;
-    margin:10% auto;
+    margin:200px auto 70px;
 }
 .gal1{
   //border:3px solid white;
@@ -470,10 +567,11 @@ li.dropdown:hover > .dropdown-menu li > a:focus{
                     */
 .contactMaster{
   //border:3px solid white;
-  height: 800px;
+  padding-left:100px;
+  height: 550px;
   width: 1100px;
   display:block;
-  margin:10% auto;
+  margin:200px auto 70px;
 }
 
 .copperMap{
@@ -497,9 +595,9 @@ li.dropdown:hover > .dropdown-menu li > a:focus{
 .address{
   //border:3px solid red;
   height: 300px;
-  width: 400px;
+  width: 300px;
   float: right;
-  padding-top: 125px;
+  padding-top: 140px;
 }
 
 .addressHeader{
@@ -524,7 +622,7 @@ li.dropdown:hover > .dropdown-menu li > a:focus{
 .hours{
   //border:3px solid green;
   height: 200px;
-  width: 400px;
+  width: 300px;
   float: right;
 }
 .hoursHeader{
