@@ -1,0 +1,4 @@
+ALTER TABLE Tea
+    ADD CONSTRAINT TK_MK
+    FOREIGN KEY (Tkey)
+    REFERENCES masterdrinks(DKey);

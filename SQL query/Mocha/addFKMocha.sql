@@ -1,0 +1,4 @@
+ALTER TABLE Mocha
+    ADD CONSTRAINT DK_MK
+    FOREIGN KEY (Mey)
+    REFERENCES masterdrinks(DKey);
