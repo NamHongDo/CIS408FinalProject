@@ -310,6 +310,26 @@ ul.#nav2>li{
   margin: 35px 45px;
 }
 
+.submenuTitle{
+  border:3px solid red;
+  color:#f27752;
+  font-size: 200%;
+  font-weight: 700;
+}
+.submenuDescription{
+  border:3px solid blue;
+  color:#ffffff;
+  height:230px;
+  font-size: 150%;
+  width:auto;
+}
+.submenuButton{
+  border:3px solid green;
+}
+.submenuPrice{
+  border:3px solid yellow;
+}
+
 /*
 ------> *** <------
     ABOUT segment

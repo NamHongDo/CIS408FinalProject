@@ -49,23 +49,64 @@
     </div>
 
     <div id="pilot"  style="display: none;">
+
       <div id="item1">
-        strictly testing
+        <div class="submenuTitle">
+          Latte
+        </div>
+        <div class="submenuDescription">
+            Coffee drink made with espresso and steamed milk.
+        </div>
+        <button class="submenuButton"> Variation</button>
+        <div class="submenuPrice">
+          2.25 &nbsp; 2.50 &nbsp; 2.75
+        </div>
       </div>
+
       <div id="item2">
-        strictly testing
+        <div class="submenuTitle">
+        </div>
+        <div class="submenuDescription">
+        </div>
+        <button class="submenuButton"> Variation</button>
+        <div class="submenuPrice">
+        </div>
       </div>
       <div id="item3">
-        strictly testing
+        <div class="submenuTitle">
+        </div>
+        <div class="submenuDescription">
+        </div>
+        <button class="submenuButton"> Variation</button>
+        <div class="submenuPrice">
+        </div>
       </div>
       <div id="item4">
-        strictly testing
+        <div class="submenuTitle">
+        </div>
+        <div class="submenuDescription">
+        </div>
+        <button class="submenuButton"> Variation</button>
+        <div class="submenuPrice">
+        </div>
       </div>
       <div id="item5">
-        strictly testing
+        <div class="submenuTitle">
+        </div>
+        <div class="submenuDescription">
+        </div>
+        <button class="submenuButton"> Variation</button>
+        <div class="submenuPrice">
+        </div>
       </div>
       <div id="item6">
-        strictly testing
+        <div class="submenuTitle">
+        </div>
+        <div class="submenuDescription">
+        </div>
+        <button class="submenuButton"> Variation</button>
+        <div class="submenuPrice">
+        </div>
       </div>
     </div>
 
@@ -114,9 +155,9 @@
 
 $('.btn').click(function() {
   var LDiv = $('.menuMaster').children().first();
-  console.log("DIV IN MENUMASTER: "+LDiv.innerHTML);
+  $(LDiv).empty();
   var target = '#'+ $(this).data('target');
-  $(LDiv).replaceWith($(target));
+  $(target).clone().appendTo($(LDiv));
   $(target).show();
   console.log("PRINTING : " +target);
 });
