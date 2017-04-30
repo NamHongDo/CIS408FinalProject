@@ -7,7 +7,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="drop.js"></script>
   </head>
 
   <body>
@@ -39,31 +38,97 @@
       </div>
     </div>
 
-    <div class=menuMaster>
-      <div id="item1">
-        
-      </div>
-      <div id="item2">
 
-      </div>
-      <div id="item3">
+    <button type="button" class="btn btn-warning" id="btn1" data-target="pilot">Btn1</button>
+    <button type="button" class="btn btn-warning" id="btn2" data-target="design">Btn2</button>
+    <button type="button" class="btn btn-warning" id="btn3" data-target="instrument">Btn3</button>
 
-      </div>
-      <div id="item4">
-
-      </div>
-      <div id="item5">
-
-      </div>
-      <div id="item6">
-
+    <div id="content" class=menuMaster >
+      <div id="dummy">
       </div>
     </div>
+
+    <div id="pilot"  style="display: none;">
+      <div id="item1">
+        strictly testing
+      </div>
+      <div id="item2">
+        strictly testing
+      </div>
+      <div id="item3">
+        strictly testing
+      </div>
+      <div id="item4">
+        strictly testing
+      </div>
+      <div id="item5">
+        strictly testing
+      </div>
+      <div id="item6">
+        strictly testing
+      </div>
+    </div>
+
+    <div id="design" style="display: none;">
+      <div id="item1">
+        strictly testinglol
+      </div>
+      <div id="item2">
+        strictly testinglol
+      </div>
+      <div id="item3">
+        strictly testingll
+      </div>
+      <div id="item4">
+        strictly testingada
+      </div>
+      <div id="item5">
+        strictly testingada
+      </div>
+      <div id="item6">
+        strictly testingfad
+      </div>
+    </div>
+
+    <div id="instrument" style="display: none;">
+      <div id="item1">
+        afalnf
+      </div>
+      <div id="item2">
+        aga
+      </div>
+      <div id="item3">
+      abaf
+      </div>
+      <div id="item4">
+      AGaff
+      </div>
+      <div id="item5">
+        afasd
+      </div>
+      <div id="item6">
+        arasdsaa
+      </div>
+    </div>
+<script>
+
+$('.btn').click(function() {
+  var LDiv = $('.menuMaster').children().first();
+  console.log("DIV IN MENUMASTER: "+LDiv.innerHTML);
+  var target = '#'+ $(this).data('target');
+  $(LDiv).replaceWith($(target));
+  $(target).show();
+  console.log("PRINTING : " +target);
+});
+
+</script>
+
     <div class="displayMenu">
 
 
     </div>
   </div>
+
    <div class="footerMenu">
        <div class="followUs">
          <div class="followUsHeader">
@@ -100,7 +165,6 @@
          </div>
        </div>
    </div>
-
 
 <!--
 
