@@ -33,7 +33,7 @@ ul.nav.navbar-nav> li{
   background-color: #f27752;
   font-size: 90%;
   //font-family: 'Raleway',sans-serif;
-  font-family: Papyrus, fantasy;
+  font-family: Papyrus,Script,serif;
   padding: 15px;
   font-weight: 700;
 
@@ -47,7 +47,7 @@ ul.nav.navbar-nav> li{
   color:  #ffffff;
   font-size: 90%;
   //font-family: 'Raleway',sans-serif;
-  font-family: Papyrus, fantasy;
+  font-family: Papyrus,Script,serif;
   padding: 15px;
   font-weight: 700;
   border-radius:10%;
@@ -258,7 +258,7 @@ ul.socialList>li{
 }
 
 .menuHeader{
-  border:5px solid white;
+  //border:5px solid white;
   height: 200px;
   width: auto;
   display:block;
@@ -307,21 +307,21 @@ ul.#nav2>li{
 }
 
 .menuMaster{
-  border:6px solid white;
-  height: 1000px;
+  //border:6px solid white;
+  height: 850px;
   width: 1200px;
   display:block;
   margin:20px auto 70px;
 }
 #item1{
-  border:6px solid red;
+  //border:6px solid red;
   height: 350px;
   width: 300px;
   float:left;
   margin: 35px 45px;
 }
 #item2{
-  border:6px solid white;
+//border:6px solid white;
   height: 350px;
   width: 300px;
   float:left;
@@ -329,7 +329,7 @@ ul.#nav2>li{
 }
 
 #item3{
-  border:6px solid yellow;
+  //border:6px solid yellow;
   height: 350px;
   width: 300px;
   float:left;
@@ -337,7 +337,7 @@ ul.#nav2>li{
 }
 
 #item4{
-  border:6px solid green;
+  //border:6px solid green;
   height: 350px;
   width: 300px;
   float:left;
@@ -345,7 +345,7 @@ ul.#nav2>li{
 }
 
 #item5{
-  border:6px solid blue;
+  //border:6px solid blue;
   height: 350px;
   width: 300px;
   float:left;
@@ -353,7 +353,7 @@ ul.#nav2>li{
 }
 
 #item6{
-  border:6px solid white;
+  //border:6px solid white;
   height: 350px;
   width: 300px;
   float:left;
@@ -361,25 +361,66 @@ ul.#nav2>li{
 }
 
 .submenuTitle{
-  border:3px solid red;
+  //border:3px solid red;
   color:#f27752;
   font-size: 200%;
   font-weight: 700;
+  font-family:Papyrus,Script,serif;
+  margin: 10px auto;
 }
 .submenuDescription{
-  border:3px solid blue;
+  //border:3px solid blue;
   color:#ffffff;
-  height:230px;
+  height:auto;
   font-size: 150%;
   width:auto;
-}
-.submenuButton{
-  border:3px solid green;
+  font-family:Papyrus,Script,serif;
+  margin: 10px auto;
 }
 .submenuPrice{
-  border:3px solid yellow;
+  //border:3px solid yellow;
+  color:#ffffff;
+  text-align: right;
+  font-family:Papyrus,Script,serif;
+  margin: 10px auto 20px;
 }
 
+#smoothie, #tea,#ic>div>.submenuTitle{
+  text-align: center;
+}
+
+
+#smoothieHeader{
+  padding-top:20px;
+  color:#FFFFFF;
+  font-size: 280%;
+  font-weight: 700;
+  text-align: center;
+  font-family:Papyrus,Script,serif;
+}
+
+.btnContainer{
+  //border:3px solid yellow;
+  height:auto;
+  width:auto;
+  float:right;
+}
+
+.btn-warning{
+  background-color: #f27752;
+  border-color:  #f27752;
+  font-family:Papyrus,Script,serif;
+  font-weight: 700;
+}
+.btn-warning:hover{
+  background-color: #ffffff;
+  border-color:  #f27752;
+  color:#f27752;
+  -webkit-box-shadow: 0px 0px 20px 0px #bc462a;
+  border-color:#ffffff;
+  font-family:Papyrus,Script,serif;
+  font-weight: 700;
+}
 /*
 ------> *** <------
     ABOUT segment
@@ -395,14 +436,14 @@ ul.#nav2>li{
 }
 
 .historyHeader{
-  font-family: Papyrus, fantasy;
+  font-family:Papyrus,Script,serif;
   color:#f27752;
   font-size: 400%;
   padding-top:100px;
 }
 
 .historyList{
-  font-family: Papyrus, fantasy;
+  font-family:Papyrus,Script,serif;
   color:#ffffff;
   font-size: 200%;
   padding-top:10px;
@@ -410,14 +451,14 @@ ul.#nav2>li{
 }
 
 .offerHeader{
-  font-family: Papyrus, fantasy;
+  font-family:Papyrus,Script,serif;
   color:#f27752;
   font-size: 400%;
   padding-top: 50px;
 }
 
 .offerList{
-  font-family: Papyrus, fantasy;
+  font-family:Papyrus,Script,serif;
   color:#ffffff;
   font-size: 200%;
   padding-top:10px;
@@ -425,14 +466,14 @@ ul.#nav2>li{
 }
 
 .achieveHeader{
-  font-family: Papyrus, fantasy;
+  font-family:Papyrus,Script,serif;
   color:#f27752;
   font-size: 400%;
   padding-top: 50px;
 }
 
 .achieveList{
-  font-family: Papyrus, fantasy;
+  font-family:Papyrus,Script,serif;
   color:#ffffff;
   font-size: 200%;
   padding-top:10px;
