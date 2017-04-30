@@ -10,6 +10,36 @@
   </head>
 
   <body>
+
+      <div id="overlay" onclick="overlayOff()">
+        <div id="variationDisplay" class="panel panel-default">
+            <div class="row">
+                <div class="col-md-4 variationSide">
+                    <div id="variationScroller">
+                        Thing<br />
+                        Thing<br />
+                        Thing<br />
+                        Thing<br />
+                        Thing<br />
+                        Thing<br />
+                        Thing<br />
+                        Thing<br />
+                        Thing<br />
+                        Thing<br />
+                        Thing<br />
+                        Thing<br />
+                        Thing<br />
+                        Thing<br />
+                        Thing<br />
+                        Thing<br />
+                        Thing<br />
+                    </div>
+                </div>
+                <div class="col-md-8">Body</div>
+            </div>
+        </div>
+      </div>
+
     <nav id='nav_bar' class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div  class="container-fluid" id="myNavbar">
         <ul  class="nav navbar-nav">
@@ -57,7 +87,7 @@
         <div class="submenuDescription">
             Coffee drink made with espresso and steamed milk.
         </div>
-        <button class="submenuButton"> Variation</button>
+        <button class="submenuButton" onclick="overlayOn()"> Variation</button>
         <div class="submenuPrice">
           2.25 &nbsp; 2.50 &nbsp; 2.75
         </div>
@@ -161,6 +191,17 @@ $('.btn').click(function() {
   $(target).show();
   console.log("PRINTING : " +target);
 });
+
+
+// transparent overlay
+function overlayOn() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function overlayOff() {
+    document.getElementById("overlay").style.display = "none";
+}
+
 
 </script>
 
