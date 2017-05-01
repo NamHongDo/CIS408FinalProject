@@ -207,7 +207,6 @@ ul.socialList>li{
     MENU segment
 ------> *** <------
                     */
-
 #overlay {
     position: fixed; /* Sit on top of the page content */
     display: none; /* Hidden by default */
@@ -230,18 +229,45 @@ ul.socialList>li{
     color: white;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
-    background-color: #f27752;
-    height: 80%;
-    width: 70%;
+    background-color: #222222;
+    height: 800px;
+    width: 1500px;
+    display:block;
 }
 
-#variationScroller{
-  width:100%;
-  height:100%;
-  /*margin-top:100px;*/
+.o1{
+  border: 5px solid white;
   background-color:#222222;
+  width:30%;
+  height:800px;
+  overflow: scroll;
   float:left;
-  overflow-y:scroll;
+}
+.o1 a {
+    background-color:#222222;
+    color: #ffffff;
+    font-size:120%;
+    display: block;
+    font-family: Papyrus,Script,serif;
+    padding: 12px;
+    text-decoration: none;
+}
+.o2{
+    border: 5px solid red;
+    background-color:#222222;
+    font-family: Papyrus,Script,serif;
+    width:70%;
+    height:100%;
+    float:left;
+}
+.o1 a:hover {
+    color: #f27752;
+}
+
+.o1 a.active {
+    background-color: #f27752;
+
+    color: white;
 }
 
 ::-webkit-scrollbar {
