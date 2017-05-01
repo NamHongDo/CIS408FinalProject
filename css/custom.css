@@ -33,7 +33,7 @@ ul.nav.navbar-nav> li{
   background-color: #f27752;
   font-size: 90%;
   //font-family: 'Raleway',sans-serif;
-  font-family: Papyrus, fantasy;
+  font-family: Papyrus,Script,serif;
   padding: 15px;
   font-weight: 700;
 
@@ -47,7 +47,7 @@ ul.nav.navbar-nav> li{
   color:  #ffffff;
   font-size: 90%;
   //font-family: 'Raleway',sans-serif;
-  font-family: Papyrus, fantasy;
+  font-family: Papyrus,Script,serif;
   padding: 15px;
   font-weight: 700;
   border-radius:10%;
@@ -207,8 +207,121 @@ ul.socialList>li{
     MENU segment
 ------> *** <------
                     */
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+#variationDisplay{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    font-size: 2em;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    background-color: #222222;
+    height: 500px;
+    width: 1500px;
+    display:block;
+}
+
+#o1{
+  border: 5px solid white;
+  background-color:#222222;
+  width:30%;
+  height:500px;
+  overflow: scroll;
+  float:left;
+}
+
+#o1 a{
+    background-color:#222222;
+    color: #ffffff;
+    font-size:120%;
+    display: block;
+    font-family: Papyrus,Script,serif;
+    padding: 12px;
+    text-decoration: none;
+}
+#o1 a:hover {
+    color: #f27752;
+}
+
+#o1 a.active {
+    background-color: #f27752;
+
+    color: white;
+}
+#closeBtn{
+  position:absolute;
+  right:170px;
+  bottom:0;
+  Width:200px;
+  height:100px;
+  margin:-10px;
+  //border: 4px solid white;
+}
+
+#closeBtn>button{
+  height:70px;
+  width:150px;
+  font-size:200%;
+}
+
+#o2{
+    border: 5px solid red;
+    background-color:#222222;
+    font-family: Papyrus,Script,serif;
+    width:70%;
+    height:100%;
+    float:left;
+    display:block;
+}
+.nameDescription{
+  color: #f27752;
+  font-family: Papyrus,Script,serif;
+  font-size: 220%;
+  padding-bottom: 20px;
+  float:left;
+}
+.smlDescription{
+  padding-left:70px;
+  font-family: Papyrus,Script,serif;
+  font-size: 180%;
+  float:left;
+}
+
+.smlPrice{
+  padding-top:50px;
+  font-family: Papyrus,Script,serif;
+  font-size: 150%;
+  float:right;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+.variationSide{
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  padding:0;
+}
+
 .menuHeader{
-  border:5px solid white;
+  //border:5px solid white;
   height: 200px;
   width: auto;
   display:block;
@@ -217,7 +330,7 @@ ul.socialList>li{
 .menuNav{
     background-color: #22222;
     //border:3px solid yellow;
-    width: 550px;
+    width: 850px;
     height: 50px;
     margin: 80px auto 10px;
 }
@@ -257,21 +370,21 @@ ul.#nav2>li{
 }
 
 .menuMaster{
-  border:6px solid white;
-  height: 1000px;
+  //border:6px solid white;
+  height: 850px;
   width: 1200px;
   display:block;
   margin:20px auto 70px;
 }
 #item1{
-  border:6px solid red;
+  //border:6px solid red;
   height: 350px;
   width: 300px;
   float:left;
   margin: 35px 45px;
 }
 #item2{
-  border:6px solid white;
+//border:6px solid white;
   height: 350px;
   width: 300px;
   float:left;
@@ -279,7 +392,7 @@ ul.#nav2>li{
 }
 
 #item3{
-  border:6px solid yellow;
+  //border:6px solid yellow;
   height: 350px;
   width: 300px;
   float:left;
@@ -287,7 +400,7 @@ ul.#nav2>li{
 }
 
 #item4{
-  border:6px solid green;
+  //border:6px solid green;
   height: 350px;
   width: 300px;
   float:left;
@@ -295,7 +408,7 @@ ul.#nav2>li{
 }
 
 #item5{
-  border:6px solid blue;
+  //border:6px solid blue;
   height: 350px;
   width: 300px;
   float:left;
@@ -303,7 +416,7 @@ ul.#nav2>li{
 }
 
 #item6{
-  border:6px solid white;
+  //border:6px solid white;
   height: 350px;
   width: 300px;
   float:left;
@@ -311,25 +424,66 @@ ul.#nav2>li{
 }
 
 .submenuTitle{
-  border:3px solid red;
+  //border:3px solid red;
   color:#f27752;
   font-size: 200%;
   font-weight: 700;
+  font-family:Papyrus,Script,serif;
+  margin: 10px auto;
 }
 .submenuDescription{
-  border:3px solid blue;
+  //border:3px solid blue;
   color:#ffffff;
-  height:230px;
+  height:auto;
   font-size: 150%;
   width:auto;
-}
-.submenuButton{
-  border:3px solid green;
+  font-family:Papyrus,Script,serif;
+  margin: 10px auto;
 }
 .submenuPrice{
-  border:3px solid yellow;
+  //border:3px solid yellow;
+  color:#ffffff;
+  text-align: right;
+  font-family:Papyrus,Script,serif;
+  margin: 10px auto 20px;
 }
 
+#smoothie, #tea,#ic>div>.submenuTitle{
+  text-align: center;
+}
+
+
+#smoothieHeader{
+  padding-top:20px;
+  color:#FFFFFF;
+  font-size: 280%;
+  font-weight: 700;
+  text-align: center;
+  font-family:Papyrus,Script,serif;
+}
+
+.btnContainer{
+  //border:3px solid yellow;
+  height:auto;
+  width:auto;
+  float:right;
+}
+
+.btn-warning{
+  background-color: #f27752;
+  border-color:  #f27752;
+  font-family:Papyrus,Script,serif;
+  font-weight: 700;
+}
+.btn-warning:hover{
+  background-color: #ffffff;
+  border-color:  #f27752;
+  color:#f27752;
+  -webkit-box-shadow: 0px 0px 20px 0px #bc462a;
+  border-color:#ffffff;
+  font-family:Papyrus,Script,serif;
+  font-weight: 700;
+}
 /*
 ------> *** <------
     ABOUT segment
@@ -345,14 +499,14 @@ ul.#nav2>li{
 }
 
 .historyHeader{
-  font-family: Papyrus, fantasy;
+  font-family:Papyrus,Script,serif;
   color:#f27752;
   font-size: 400%;
   padding-top:100px;
 }
 
 .historyList{
-  font-family: Papyrus, fantasy;
+  font-family:Papyrus,Script,serif;
   color:#ffffff;
   font-size: 200%;
   padding-top:10px;
@@ -360,14 +514,14 @@ ul.#nav2>li{
 }
 
 .offerHeader{
-  font-family: Papyrus, fantasy;
+  font-family:Papyrus,Script,serif;
   color:#f27752;
   font-size: 400%;
   padding-top: 50px;
 }
 
 .offerList{
-  font-family: Papyrus, fantasy;
+  font-family:Papyrus,Script,serif;
   color:#ffffff;
   font-size: 200%;
   padding-top:10px;
@@ -375,14 +529,14 @@ ul.#nav2>li{
 }
 
 .achieveHeader{
-  font-family: Papyrus, fantasy;
+  font-family:Papyrus,Script,serif;
   color:#f27752;
   font-size: 400%;
   padding-top: 50px;
 }
 
 .achieveList{
-  font-family: Papyrus, fantasy;
+  font-family:Papyrus,Script,serif;
   color:#ffffff;
   font-size: 200%;
   padding-top:10px;
