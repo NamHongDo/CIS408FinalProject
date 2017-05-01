@@ -15,6 +15,31 @@
         <div id="variationDisplay" class="panel panel-default">
 
               <div class="o1">
+
+                  <?php
+                  $servername = "coppermoon";
+                  $username = "root";
+                  $password = "";
+                  $dbname = "coppermoonmenu";
+
+                  $conn = new mysqli($servername, $username, $password, $dbname);
+
+                  if($conn->connect_error) {
+                      die("Connection failed: " . $conn->connect_error);
+                  }
+
+                  $sql = "SELECT * FROM masterdrinks";
+                  $result = $conn->query($sql);
+
+                  if ($result->num_rows > 0) {
+                      while($row = $result->fetch_assoc()) {
+                          echo $row['DName'];
+                      }
+                  } else {
+                      echo "0 results";
+                  }
+                  ?>
+
                   <a href="#">Home</a>
                   <a href="#">Link 1</a>
                   <a href="#">Link 2</a>
@@ -129,7 +154,7 @@
 
       <div id="item5">
         <div class="submenuTitle">
-          Macchiato
+          MACCHIATO
         </div>
         <div class="submenuDescription">
             Coffee drink made with espresso and steamed milk.
