@@ -13,7 +13,7 @@
   while($row=mysqli_fetch_assoc($result))
   {
       echo "<a href=# onclick=getData(this.innerHTML);>" .$row['DName']. "</a>";
-      echo "<br>";
+    //   echo "<br>";
   }
   mysqli_close($con);
   ?>
