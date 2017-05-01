@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 28, 2017 at 10:26 PM
+-- Generation Time: May 01, 2017 at 07:58 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -23,72 +23,59 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `americano`
+-- Table structure for table `description`
 --
 
-CREATE TABLE `americano` (
-  `Akey` varchar(4) NOT NULL,
+CREATE TABLE `description` (
+  `MKey` int(11) NOT NULL,
   `Description` varchar(256) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `americano`
+-- Dumping data for table `description`
 --
 
-INSERT INTO `americano` (`Akey`, `Description`) VALUES
-('61', ' Love is in the air'),
-('62', ' Classic choice'),
-('63', ' Never fail to impress'),
-('64', ' Wild and untammed'),
-('65', ' What you seek in a mocha is here'),
-('66', ' Perfect blend between passion and love'),
-('67', ' Soothing to the very last sip'),
-('68', ' Overflowing with passion ');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `icecream`
---
-
-CREATE TABLE `icecream` (
-  `Ikey` varchar(4) NOT NULL,
-  `Description` varchar(256) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `icecream`
---
-
-INSERT INTO `icecream` (`Ikey`, `Description`) VALUES
-('151', 'The taste you will never forget'),
-('152', 'The taste you will hate to forget');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `latte`
---
-
-CREATE TABLE `latte` (
-  `Lkey` varchar(4) NOT NULL,
-  `Description` varchar(256) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `latte`
---
-
-INSERT INTO `latte` (`Lkey`, `Description`) VALUES
-('0', ' Latte with delicious Dark Chocolate and cream'),
-('1', ' Showered in unique tase of Cinamon and love'),
-('2', ' Classic choice of Latte'),
-('3', ' Perfect drinks for cold day'),
-('4', ' Want to impress your colleague with style? This is your pick'),
-('5', ' Simple but balanced'),
-('6', ' Our signature drink'),
-('7', ' Submerge yourself in the nature'),
-('8', ' a good way to become an Italian');
+INSERT INTO `description` (`MKey`, `Description`) VALUES
+(0, ' Latte with delicious Dark Chocolate and cream'),
+(1, ' Showered in unique tase of Cinamon and love'),
+(2, ' Classic choice of Latte'),
+(3, ' Perfect drinks for cold day'),
+(4, ' Want to impress your colleague with style? This is your pick'),
+(5, ' Simple but balanced'),
+(6, ' Our signature drink'),
+(7, ' Submerge yourself in the nature'),
+(8, ' a good way to become an Italian'),
+(31, ' Love is in the air'),
+(32, ' Classic choice'),
+(33, ' Never fail to impress'),
+(34, ' Wild and untammed'),
+(35, ' What you seek in a mocha is here'),
+(36, ' Perfect blend between passion and love'),
+(37, ' Soothing to the very last sip'),
+(38, ' Overflowing with passion '),
+(39, ' Straight from the future'),
+(40, ' One Two Three and you will never forget it'),
+(61, ' Love is in the air'),
+(62, ' Classic choice'),
+(63, ' Never fail to impress'),
+(64, ' Wild and untammed'),
+(65, ' What you seek in a mocha is here'),
+(66, ' Perfect blend between passion and love'),
+(67, ' Soothing to the very last sip'),
+(68, ' Overflowing with passion '),
+(91, 'Made with Strawberry'),
+(92, 'Made with Kiwi'),
+(93, 'Made with Blueberry'),
+(94, 'Made with Mango'),
+(95, 'Made with Pineapple'),
+(96, 'Made with Banana'),
+(121, 'Straight out from Moon'),
+(122, 'Straight out from Jupiter'),
+(123, 'Straight out from Mars'),
+(124, 'Straight out from Nepture'),
+(125, 'Straight out from Mercury'),
+(151, 'The taste you will never forget'),
+(152, 'The taste you will hate to forget');
 
 -- --------------------------------------------------------
 
@@ -152,33 +139,6 @@ INSERT INTO `masterdrinks` (`DName`, `DCategory`, `DType`, `DKey`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mocha`
---
-
-CREATE TABLE `mocha` (
-  `Mkey` varchar(4) NOT NULL,
-  `Description` varchar(256) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `mocha`
---
-
-INSERT INTO `mocha` (`Mkey`, `Description`) VALUES
-('31', ' Love is in the air'),
-('32', ' Classic choice'),
-('33', ' Never fail to impress'),
-('34', ' Wild and untammed'),
-('35', ' What you seek in a mocha is here'),
-('36', ' Perfect blend between passion and love'),
-('37', ' Soothing to the very last sip'),
-('38', ' Overflowing with passion '),
-('39', ' Straight from the future'),
-('40', ' One Two Three and you will never forget it');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `price`
 --
 
@@ -235,90 +195,15 @@ INSERT INTO `price` (`PKey`, `PSmall`, `Pmedium`, `PLarge`) VALUES
 ('151', 2.50, 3.25, 3.75),
 ('152', 2.50, 3.25, 3.75);
 
--- --------------------------------------------------------
-
---
--- Table structure for table `smoothie`
---
-
-CREATE TABLE `smoothie` (
-  `Skey` varchar(4) NOT NULL,
-  `Description` varchar(256) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `smoothie`
---
-
-INSERT INTO `smoothie` (`Skey`, `Description`) VALUES
-('91', 'Made with Strawberry'),
-('92', 'Made with Kiwi'),
-('93', 'Made with Blueberry'),
-('94', 'Made with Mango'),
-('95', 'Made with Pineapple'),
-('96', 'Made with Banana'),
-('121', 'Straight out from Moon'),
-('122', 'Straight out from Jupiter'),
-('123', 'Straight out from Mars'),
-('124', 'Straight out from Nepture'),
-('125', 'Straight out from Mercury');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tea`
---
-
-CREATE TABLE `tea` (
-  `Tkey` varchar(4) NOT NULL,
-  `Description` varchar(256) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `americano`
---
-ALTER TABLE `americano`
-  ADD KEY `DK_AK` (`Akey`);
-
---
--- Indexes for table `icecream`
---
-ALTER TABLE `icecream`
-  ADD KEY `DK_IK` (`Ikey`);
-
---
--- Indexes for table `latte`
---
-ALTER TABLE `latte`
-  ADD KEY `fk_foreign_key_name` (`Lkey`);
-
---
--- Indexes for table `mocha`
---
-ALTER TABLE `mocha`
-  ADD KEY `DK_MK` (`Mkey`);
 
 --
 -- Indexes for table `price`
 --
 ALTER TABLE `price`
   ADD KEY `DK_PK` (`PKey`);
-
---
--- Indexes for table `smoothie`
---
-ALTER TABLE `smoothie`
-  ADD KEY `DK_SK` (`Skey`) USING BTREE;
-
---
--- Indexes for table `tea`
---
-ALTER TABLE `tea`
-  ADD KEY `TK_MK` (`Tkey`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
