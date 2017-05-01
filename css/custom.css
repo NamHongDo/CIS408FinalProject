@@ -297,7 +297,7 @@ ul.socialList>li{
 .menuNav{
     background-color: #22222;
     //border:3px solid yellow;
-    width: 550px;
+    width: 50em;
     height: 50px;
     margin: 80px auto 10px;
 }
