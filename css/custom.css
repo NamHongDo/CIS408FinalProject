@@ -372,7 +372,7 @@ ul.socialList>li{
 }
 
 .menuNav{
-    background-color: #22222;
+    background-color: #222222;
     //border:3px solid yellow;
     width: 850px;
     height: auto;
@@ -395,7 +395,7 @@ ul.#nav2>li{
     border-color:#222222;
     height: 85px;
     background-color:#222222;
-    opacity: 0.85;
+    /*opacity: 0.85;*/
 }
 
 .navbar-inverse .navbar-nav > li > a {
