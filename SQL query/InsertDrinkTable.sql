@@ -38,4 +38,8 @@ INSERT INTO masterdrinks VALUES
 ('Black','tea','staple','124'),
 ('Green','tea','staple','125'),
 ('Vanilla','icecream','staple','151'),
-('Dark Chocolate','icecream','staple','152');
+('Dark Chocolate','icecream','staple','152'),
+('Cardamom', 'coffee', 'seasonal', '181'),
+('Almond', 'coffee', 'staple', '182'),
+('Strawberry-Milk', 'coffee', 'seasonal', '183'),
+('Brown Sugar', 'coffee', 'staple', '184');
