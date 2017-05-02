@@ -84,6 +84,7 @@
     </div>
 
 
+
     <div id="content" class=menuMaster >
       <div id="dummy">
       </div>
@@ -156,7 +157,7 @@
           MACCIATO
         </div>
         <div class="submenuDescription">
-            Coffee drink made with espresso and steamed milk.
+            Coffee drink made with espresso and foamed milk.
         </div>
         <div class="submenuPrice">
           2.25 &nbsp; . &nbsp; 2.50 &nbsp; . &nbsp; 2.75
@@ -290,6 +291,14 @@
     </div>
 
 <script>
+
+let stateCheck = setInterval(() => {
+  if (document.readyState === 'complete') {
+    clearInterval(stateCheck);
+    // document ready
+    document.getElementById("btn1").click();
+  }
+}, 100);
 
 $('.btn').click(function() {
   var LDiv = $('.menuMaster').children().first();

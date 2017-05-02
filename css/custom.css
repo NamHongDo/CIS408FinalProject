@@ -216,6 +216,34 @@ ul.socialList>li{
 
 }
 
+.textOverlay {
+    font-family: "Philosopher";
+
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 3em;
+    color: #f27752;
+    z-index: 1;
+}
+
+#titleOverlay {
+    top:1.5em;
+    width: 50%;
+    font-size: 5em;
+}
+
+#subOverlay {
+    color: white;
+    font-size: 3em;
+    top: 5em;
+    width: 50%;
+    color: #ededed;
+    text-align: right;
+    padding-right: 1em;
+}
+
 /*
 ------> *** <------
     MENU segment
@@ -337,8 +365,8 @@ ul.socialList>li{
 }
 
 .menuHeader{
-  //border:5px solid white;
-  height: 200px;
+  /*border:5px solid white;*/
+  height: auto;
   width: auto;
   display:block;
 }
@@ -347,7 +375,7 @@ ul.socialList>li{
     background-color: #22222;
     //border:3px solid yellow;
     width: 850px;
-    height: 50px;
+    height: auto;
     margin: 80px auto 10px;
 }
 
@@ -386,11 +414,11 @@ ul.#nav2>li{
 }
 
 .menuMaster{
-  //border:6px solid white;
+  /*border:6px solid white;*/
   height: 850px;
   width: 1200px;
   display:block;
-  margin:20px auto 70px;
+  margin: 5em auto 70px;
 }
 #item1{
   //border:6px solid red;
