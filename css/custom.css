@@ -1,5 +1,7 @@
 body{
   background-color: #222222;
+  margin: 0;
+  height: 100%;
 }
 
 .navbar-default {
